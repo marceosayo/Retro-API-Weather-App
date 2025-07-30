@@ -14,7 +14,7 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-image: url("../images/backgrounds/day.webp");
+  background-image: url("images/backgrounds/day.webp");
   background-repeat: no-repeat;
   background-size: 1000px;
   background-position-x: center;
