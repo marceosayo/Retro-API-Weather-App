@@ -11,8 +11,6 @@ const deleteSound = new Audio("sound fx/delete.m4a");
 typeSound.volume = 0.3;
 deleteSound.volume = 0.3;
 
-background.style.backgroundImage = "url('images/backgrounds/day.webp')";
-
 async function checkWeather(city) {
   const response = await fetch(apiUrl + city + `&appid=${apiKey}`);
 
