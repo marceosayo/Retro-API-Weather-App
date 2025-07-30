@@ -1,0 +1,165 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: monospace;
+}
+
+body {
+  background-color: black;
+}
+
+.background {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-image: url("/images/backgrounds/day.webp");
+  background-repeat: no-repeat;
+  background-size: 1000px;
+  background-position-x: center;
+  background-position-y: center;
+  min-width: 1000px;
+  min-height: 573px;
+  height: 90vh;
+  image-rendering: pixelated;
+  cursor: default;
+}
+
+.search {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 3px solid white;
+  border-radius: 50px;
+}
+
+.search input {
+  font-size: 18px;
+  color: #555;
+  background: #fff0ffe2;
+  padding: 10px 25px;
+  height: 60px;
+  border: none;
+  border-radius: 30px 0 0 30px;
+  outline: none;
+  flex: 1;
+}
+
+.search button {
+  border: none;
+  outline: none;
+  background: hsla(300, 100%, 97%, 0.886);
+  border-radius: 0 30px 30px 0;
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+}
+
+.search button:hover {
+  background: hsla(295, 100%, 94%, 0.886);
+}
+
+.search button:active {
+  background: hsla(290, 100%, 91%, 0.886);
+}
+
+.search button img {
+  padding-top: 4px;
+  width: 25px;
+  image-rendering: auto;
+}
+
+.weather {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.weather-icon {
+  opacity: 80%;
+  border-radius: 50%;
+  width: 200px;
+  image-rendering: auto;
+  margin: 20px;
+}
+
+.temp {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: white;
+  text-shadow: 0px 0px 4px black;
+}
+
+.city {
+  color: black;
+  font-weight: 100;
+  font-size: 2.2rem;
+  text-shadow: 0px 0px 4px white;
+}
+
+.details {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  text-align: center;
+  gap: 50px;
+  margin-top: 20px;
+  border-radius: 20px;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.35);
+  color: white;
+}
+
+.col img {
+  width: 80px;
+  height: 80px;
+  opacity: 80%;
+  border-radius: 50%;
+  image-rendering: auto;
+  background: rgb(154, 154, 154);
+}
+
+.col div {
+  width: 100px;
+}
+
+.humidity,
+.wind {
+  font-size: 1.5rem;
+}
+
+.error-message {
+  position: absolute;
+  color: #555;
+  background: #fff0ffe2;
+  border: 3px solid white;
+  border-top: none;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  padding: 7px;
+  margin-top: 99px;
+  display: none;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  padding: 4px;
+  color: white;
+  background-color: black;
+  width: 140px;
+  border: 1px solid white;
+  border-bottom: none;
+  border-top-left-radius: 18px;
+  border-top-right-radius: 18px;
+}
+
+.github-icon {
+  width: 25px;
+  margin-top: 4px;
+}
