@@ -43,29 +43,23 @@ async function checkWeather(city) {
       Math.round(data.wind.speed * 10) / 10 + " km/h";
 
     if (data.weather[0].main == "Clouds") {
-      weatherIcon.src = "../images/weather icons/clouds.gif";
-      background.style.backgroundImage =
-        "url('../images/backgrounds/cloudy.gif')";
+      weatherIcon.src = "images/weather icons/clouds.gif";
+      background.style.backgroundImage = "url('images/backgrounds/cloudy.gif')";
     } else if (data.weather[0].main == "Clear") {
-      weatherIcon.src = "../images/weather icons/clear.gif";
-      background.style.backgroundImage =
-        "url('../images/backgrounds/day.webp')";
+      weatherIcon.src = "images/weather icons/clear.gif";
+      background.style.backgroundImage = "url('images/backgrounds/day.webp')";
     } else if (data.weather[0].main == "Rain") {
-      weatherIcon.src = "../images/weather icons/rain.gif";
-      background.style.backgroundImage =
-        "url('../images/backgrounds/rainy.gif')";
+      weatherIcon.src = "images/weather icons/rain.gif";
+      background.style.backgroundImage = "url('images/backgrounds/rainy.gif')";
     } else if (data.weather[0].main == "Drizzle") {
-      weatherIcon.src = "../images/weather icons/drizzle.gif";
-      background.style.backgroundImage =
-        "url('../images/backgrounds/rainy.gif')";
+      weatherIcon.src = "images/weather icons/drizzle.gif";
+      background.style.backgroundImage = "url('images/backgrounds/rainy.gif')";
     } else if (data.weather[0].main == "Mist") {
-      weatherIcon.src = "../images/weather icons/mist.gif";
-      background.style.backgroundImage =
-        "url('../images/backgrounds/cloudy.gif')";
+      weatherIcon.src = "images/weather icons/mist.gif";
+      background.style.backgroundImage = "url('images/backgrounds/cloudy.gif')";
     } else if (data.weather[0].main == "Snow") {
-      weatherIcon.src = "../images/weather icons/snow.gif";
-      background.style.backgroundImage =
-        "url('../images/backgrounds/snow.gif')";
+      weatherIcon.src = "images/weather icons/snow.gif";
+      background.style.backgroundImage = "url('images/backgrounds/snow.gif')";
     }
   }
 }
